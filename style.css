@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+}
+
+body {
+  background: #f5f7fa;
+  color: #0b1f33;
+}
+
+nav {
+  background: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+nav h1 {
+  color: #0b3c5d;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #0b1f33;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 90px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0b3c5d, #1e6091);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+.btn-light, .btn-dark {
+  padding: 14px 26px;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-light {
+  background: white;
+  color: #0b3c5d;
+  text-decoration: none;
+}
+
+.btn-dark {
+  background: #0b3c5d;
+  color: white;
+}
+
+.features {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.feature {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.products {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product a {
+  display: block;
+  margin-top: 10px;
+  background: #0b3c5d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #6b7280;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+}
