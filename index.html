@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ball Knowledge | Everything Soccer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <h1>⚽ Ball Knowledge</h1>
+  <div>
+    <a href="shop.html">Shop</a>
+    <a href="#features">Why Us</a>
+    <a onclick="openProfile()">Profile</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h2>Everything Soccer. One Place.</h2>
+  <p>
+    Cleats, kits, training, recovery, tickets —  
+    all from the best soccer stores, personalized for you.
+  </p>
+  <a href="shop.html" class="btn-light">Start Shopping</a>
+</section>
+
+<section id="features" class="features">
+  <div class="feature">
+    <h3>All Stores United</h3>
+    <p>Nike, Adidas, Puma, Soccer.com and more — one platform.</p>
+  </div>
+  <div class="feature">
+    <h3>Personalized</h3>
+    <p>Set your size and gender once. We do the rest.</p>
+  </div>
+  <div class="feature">
+    <h3>Smart Alerts</h3>
+    <p>Never miss a drop or price cut again.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Ball Knowledge • Affiliate links may earn commission
+</footer>
+
+<!-- PROFILE MODAL -->
+<div class="modal" id="profileModal">
+  <div class="modal-content">
+    <h3>Your Profile</h3>
+
+    <select id="gender">
+      <option value="">Gender</option>
+      <option value="men">Men</option>
+      <option value="women">Women</option>
+    </select>
+
+    <select id="size">
+      <option value="">Size</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+    </select>
+
+    <button class="btn-dark" onclick="saveProfile()">Save</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
