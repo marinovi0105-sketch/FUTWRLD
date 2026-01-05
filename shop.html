@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop | Ball Knowledge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <h1>⚽ Ball Knowledge</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a onclick="openProfile()">Profile</a>
+  </div>
+</nav>
+
+<section class="filters">
+  <select id="genderFilter">
+    <option value="">All Genders</option>
+    <option value="men">Men</option>
+    <option value="women">Women</option>
+  </select>
+
+  <select id="priceFilter">
+    <option value="">Any Price</option>
+    <option value="low">Low → High</option>
+    <option value="high">High → Low</option>
+  </select>
+
+  <button class="btn-dark" onclick="renderProducts()">Apply</button>
+</section>
+
+<section class="products" id="productList"></section>
+
+<footer>
+  Affiliate purchases help support Ball Knowledge ⚽
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
